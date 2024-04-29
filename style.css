@@ -1,4 +1,4 @@
-/* @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700");
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
@@ -31,8 +31,6 @@ body {
 
 .button-container {
   perspective: 500px;
-  -moz-perspective: 500px;
-  -webkit-perspective: 500px;
 }
 
 .mic-button {
@@ -45,16 +43,12 @@ body {
   transition: transform 0.4s;
   border: 2px solid #47aca9;
   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   position: relative;
 }
 
 .button-message,
 .mic {
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
 }
 
 .button-message {
@@ -166,55 +160,19 @@ h1 {
   gap: 16px;
 }
 
-.info-button {
-  display: flex;
-  align-items: center;
-  color: black;
-  height: 40px;
-  border-radius: 4px;
-  padding: 0 16px;
-  margin-top: 32px;
-  font-family: "Arimo", sans-serif;
-  font-weight: 600;
+.links {
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link {
+  color: whitesmoke;
   text-decoration: none;
+  transition: color 0.3s, font-size 0.3s;
 }
 
-.sign-up {
-  color: white;
-  position: relative;
-  background-origin: border-box;
-  background-image: linear-gradient(90deg, #201cff -91.5%, #13ef95 80.05%);
-  box-shadow: 2px 1000px 1px var(--md-code-background) inset;
-  z-index: 1;
+.link:hover {
+  color: #fff;
+  font-size: 1.1em;
 }
-
-.sign-up::before {
-  content: "";
-  border-radius: 4px;
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
-  background-color: black;
-  z-index: -1;
-}
-
-.docs {
-  background-color: white;
-}
-
-.docs::after {
-  font-family: FontAwesome;
-  font-weight: 900;
-  content: "\f061";
-  margin-right: -4px;
-  margin-left: 8px;
-}
-
-.click {
-  position: absolute;
-  height: 150px;
-  left: 20px;
-  top: -144px;
-} */
